@@ -49,8 +49,6 @@ jobs:
 
       - name: Show Docker logs
         if: always()
-        run: docker logs node-app
+        run: docker logs node-docker-demo
 
-      - name: Stop container
-        if: always()
-        run: docker stop node-app || true
+      
